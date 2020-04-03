@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script src="./lib/promise.js"></script>
+<script>
+ 
+  let p = new Promise((resolve, reject) => {
+
+
+    setTimeout(() => {
+      resolve('aaa')
+    }, 100)
+    console.log('------')
+
+
+  })
+  console.log(p, '--p----')
+  
+  
+  p.then(value => {
+    console.log(value, '<-----value')
+  }, reason => {
+    console.log(reason, '<-----reason')
+
+  })
+
+
+</script>
